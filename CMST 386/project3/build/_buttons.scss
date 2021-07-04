@@ -1,0 +1,40 @@
+// buttons.scss
+.button {
+    background-color: yellow;
+    background-image: linear-gradient(#0275d8, yellow);
+    border: 1px solid;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px ;
+  }
+  
+  .button {border-radius: 12px;}
+  
+
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    background-image: linear-gradient(#0275d8, yellow);
+  }

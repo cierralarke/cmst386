@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Questrial&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+h1 {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+}
+
+h2 {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  color: #ffffff;
+}
+
+h4 {
+  text-align: left;
+  color: #ffffff;
+  display: block;
+  padding: 0px;
+  width: auto;
+  background-color: #202020;
+}
+
+hr.divider {
+  margin: 0em;
+  border-width: 2px;
+}
+
+body {
+  background-color: #633030;
+}
+
+@media only screen and (max-width: 412px) {
+  body {
+    background-color: #0275d8;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #643368;
+  }
+}
+@font-face {
+  font-family: "indieflower";
+  src: url(IndieFlower-Regular.ttf);
+}
+* {
+  font-family: "indieflower";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#list-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 525px;
+}
+
+#list-nav li {
+  display: inline;
+  vertical-align: top;
+}
+
+#list-nav li {
+  float: right;
+}
+
+#list-nav li a {
+  display: block;
+  padding: 5px;
+  background-color: #000000;
+  font-family: "Questrial", sans-serif;
+  color: #eeeeee;
+  width: 100px;
+  text-align: center;
+  border-left: 1px solid #ffffff;
+}
+
+#list-nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+  color: black;
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  width: auto;
+  background: #202020;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 60px;
+  width: auto;
+  height: auto;
+}
+
+ul.breadcrumb {
+  background-color: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 2px;
+  color: black;
+  content: "/ ";
+}
+
+ul.breadcrumb li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+}
+
+ul.breadcrumb li a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #eeeeee;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #101316;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Questrial", sans-serif;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 70px;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu main main main right right";
+  grid-gap: 1px;
+  background-color: #633030;
+  padding: 3px;
+}
+
+.grid-container > div {
+  background-color: #0275d8;
+}
+
+.button {
+  background-color: yellow;
+  background-image: linear-gradient(#0275d8, yellow);
+  border: 1px solid;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+  box-shadow: 10px 10px;
+}
+
+.button {
+  border-radius: 12px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  background-image: linear-gradient(#0275d8, yellow);
+}

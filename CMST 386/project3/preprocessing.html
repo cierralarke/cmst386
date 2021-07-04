@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CMST 386 - Cierra Larke - Preprocessing</title>
+  <link rel="stylesheet" type="text/css" href="build/style.css">
+  <meta name="description" content="Principles of Web Technology Project Three, Preprocessing">
+  <meta name="keywords"
+    content="Preprocessing, Responsive Design, Media Queries, Analytics">
+  <meta name="author" content="Cierra Larke">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   
+   .column {
+    width: 50%;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+        <div class="topnav">
+            <a href="../index.html" class="active"><img src="images/ccl.png" alt="ccl" style="width:42px;height:42px;border:0;"></a>
+            <div id="myLinks">
+              <a href="../index.html">Home</a>
+              <a href="project3.html">Project 3</a>
+          
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
+
+<h1>CMST 386 - Preprocessing</h1>       
+ </header>
+
+  <nav>
+   <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+        <li>Preprocessing</li>
+      </ul>
+</nav>
+
+  <main>
+    <div class="row">
+      <div class="column">
+        <h2>Explain the ways to implement preprocessing (client-side vs server-side).</h2>
+        <p id="rcorners3">Two ways you can implement preprocessing are by using LESS and SASS. On the client side, both options use variables, mixins, nesting and a slew of other operations to make resulting code leaner and more organized. With CSS preprocessors, you are able to deploy your code to a staging server and see updates instantly. 
+
+          <h2>Link and comment out LESS or SASS file in the HTML file including explanation of how it was executed.</h2>
+          <p id="rcorners3">
+          I used SASS and a program for MacOS called Codekit. I created a folder called “build” to house my scss files. I created five SASS files, four of which I imported into my style.scss code. By doing this, I was able to organize and separate elements of code like buttons and layout from each other. I used Codekit to view my changes on its active server and imported to compiled style.css file into my HTML from edits I made on the style.scss file. 
+        </p>
+        </p>
+
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h2>Define and describes the mechanisms used in either LESS or SASS: mixins, variables, functions, operators, nested variables.</h2>
+          <p id="rcorners3">SASS uses the “$” variable to preface elements to be changed. With variables, you do not have to change a value several times. Mathematical operators along with various other symbols are used in SASS to check for different behaviors. Mixins are blocks of code that can be reused throughout the stylesheet. According to sass-lang.com, “Functions allow you to define complex operations on SassScript values that you can re-use throughout your stylesheet. They make it easy to abstract out common formulas and behaviors in a readable way.” Nesting variables in SASS is very similar to nesting a CSS stylesheet, for example, with SCSS syntax, an unordered list can be nested under navigation with less code and the “nav” repetition as it would appear in CSS syntax. Nesting also makes for a cleaner code compared to CSS.
+
+          </p>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+        <script>
+          var mybutton = document.getElementById("myBtn");
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+  </main>
+</body>
+
+
+<footer>
+  <div style="text-align:center"><a href="../index.html"> Home | </a><a href="project3.html"> Project 3 | </a></div>
+</footer>
+
+</html>

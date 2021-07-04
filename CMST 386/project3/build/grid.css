@@ -1,0 +1,74 @@
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #101316;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Questrial", sans-serif;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 70px;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu main main main right right";
+  grid-gap: 1px;
+  background-color: #633030;
+  padding: 3px;
+}
+
+.grid-container > div {
+  background-color: #0275d8;
+}

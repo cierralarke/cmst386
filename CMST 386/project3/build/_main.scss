@@ -1,0 +1,131 @@
+// main.scss
+body {
+    background-color: rgb(99, 48, 48);
+  }
+  
+  @media only screen and (max-width: 412px) {
+    body {
+      background-color: #0275d8;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(100, 51, 104);
+    }
+  }
+  
+  @font-face {
+    font-family: 'indieflower';
+    src: url(IndieFlower-Regular.ttf);
+  }
+  
+  * {
+    font-family: 'indieflower';
+  }
+  
+p {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  body {
+   
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  #list-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:525px
+  }
+  
+  #list-nav li {
+      display: inline;
+      vertical-align:top;
+  }
+  #list-nav li {
+      float: right;
+  }
+  #list-nav li a {    
+      display: block;
+      padding: 5px;
+      background-color: #000000;
+      font-family: 'Questrial', sans-serif;
+      color:#eeeeee;
+      width:100px;
+      text-align: center;
+      border-left:1px solid #ffffff;
+  }
+  #list-nav li a:hover,  .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  #rcorners3 {
+      border-radius: 15px 50px;
+      width: auto;
+      background: #202020;
+      padding: 20px; 
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      } 
+    
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+    
+                       
+      .column {
+        float: left;
+        padding: 60px;
+        width: auto;
+        height: auto;
+      }
+    
+      ul.breadcrumb {
+
+        background-color: none;
+        
+      }
+      ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+       
+      }
+      ul.breadcrumb li+li:before {
+        padding: 2px;
+        color: black;
+        content: "/\00a0";
+      }
+      ul.breadcrumb li a {
+        color: #000000;
+        text-decoration: none;
+        font-family: 'Questrial', sans-serif;
+      }
+      ul.breadcrumb li a:hover {
+        color: yellow;
+        text-decoration: underline;
+      }
+
+      footer {
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: #eeeeee;
+      }
